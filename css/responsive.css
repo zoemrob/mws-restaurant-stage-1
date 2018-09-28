@@ -1,0 +1,108 @@
+@media screen and (min-width: 1100px) {
+    body {
+        max-width: 1200px;
+        margin: 0 auto;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 769px) {
+
+    #restaurants-list {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        /*text-align: center;*/
+        justify-content: center;
+    }
+
+    header #breadcrumb {
+        width: initial;
+    }
+
+    .inside #maincontent {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .inside #map-container {
+        position: initial;
+        height: 400px;
+        right: initial;
+        top: initial;
+        width: 100%;
+    }
+
+    #restaurant-container, .inside #reviews-container {
+        padding: 0 12px;
+        width: calc(50% - 24px);
+    }
+
+    .inside #restaurant-container {
+        order: 2;
+        text-align: center;
+    }
+
+    .inside #reviews-container {
+        padding: 0;
+        order: 3;
+        position: initial;
+        text-align: center;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    #restaurants-list {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        /*text-align: center;*/
+        justify-content: center;
+    }
+
+    .inside header {
+        position: initial;
+        top: initial;
+        width: initial;
+        z-index: initial;
+    }
+
+    ul#breadcrumb {
+        width: initial;
+    }
+
+    .inside #map-container {
+        height: 300px;
+        position: initial;
+        right: initial;
+        top: initial;
+        width: initial;
+    }
+
+    .inside #footer {
+        bottom: initial;
+        position: initial;
+        width: initial;
+    }
+
+    .inside #restaurant-container, .inside #reviews-container {
+        padding: 12px;
+        width: initial;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    nav h1 a {
+        font-size: 2rem;
+    }
+
+    #restaurants-list {
+        padding: 0;
+    }
+
+    #restaurants-list li {
+        max-width: initial;
+    }
+}
